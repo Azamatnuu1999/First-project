@@ -1,0 +1,51 @@
+.seven{
+    padding: 30px;
+    background-color: rgb(35, 35, 35);
+    .contain{
+        position: relative;
+        color: white;
+        .data{
+            width: 40%;
+            margin-left: auto;
+            &__images{
+                display: flex;
+                gap: 10px;
+                cursor: pointer;
+            }
+            &__text{
+                margin: 30px 0;
+                h1{
+                    font-size: 22px;
+                    color: white;
+                }
+            }
+        }
+        .image{
+            position: absolute;
+            left: 0;
+            width: 40%;
+            top: -80px;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .seven{
+        .contain{
+            .data{
+                z-index: 1;
+                width: 100%;
+                text-align: center;
+                &__images{
+                    img{
+                        margin: 0 auto;
+                        width: 40%;
+                    }
+                }
+            }
+            .image{
+                display: none;
+            }
+        }
+    }
+}

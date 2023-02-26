@@ -1,0 +1,192 @@
+.third{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 96%;
+    margin: 100px auto;
+    .forty{
+        width: 40%;
+        padding: 14px;
+        margin: 10px auto;
+        height: 360px;
+        &__btn{
+            background-color: inherit;
+            border: 1px solid $yashil;
+            border-radius: 10px;
+            padding: 10px 25px;
+            color: $yashil;
+        }
+        &__btn:hover{
+            background-color: $yashil;
+            color: white;
+        }
+        &__h1{
+            font-size: 30px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        &__h4{
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 1px;
+        }
+        &__p{
+            margin: 0 0 5px;
+        }
+    }
+    .forty:hover{
+        transform: scale(1.01);
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+        cursor: pointer;
+        box-shadow: 0 0 6px grey;
+    }
+    .sixty{
+        padding: 14px;
+        width: 58%;
+        margin: 10px auto;
+        height: 360px;
+        &__ul{
+            padding-left: 0;
+            gap: 3%;
+            display: flex;
+            li{
+                text-align: center;
+                margin-right: 14px;
+                b{
+                    font-size: 19px;
+                }
+            }
+        }
+        &__btn{
+            background-color: inherit;
+            border: 1px solid $yashil;
+            border-radius: 10px;
+            padding: 10px 25px;
+            color: $yashil;
+            margin: 16px 0 0;
+        }
+        &__btn:hover{
+            background-color: $yashil;
+            color: white;
+        }
+        &__h1{
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0;
+        }
+        &__h4{
+            font-size: 15px;
+            font-weight: 500;
+            text-align: start;
+            margin: 14px 0 0;
+        }
+    }
+    .sixty:hover{
+        transform: scale(1.01);
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+        cursor: pointer;
+        box-shadow: 0 0 6px grey;
+    }
+    .first{
+        background-image: url(/assets/media/image\ \(44\).png);
+        background-size: 100% 100%;
+    }
+    .second{
+        background-image: url(/assets/media/image\ \(55\).png);
+        background-size: 100% 100%;
+    }
+    .third{
+        background-image: url(/assets/media/image\ \(66\).png);
+        background-size: 100% 100%;
+        display: block;
+    }
+    .fourth{
+        background-image: url(/assets/media/image\ \(7\).png);
+        background-size: 50% 70%;
+        background-color: $backgroundgrey;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        form{
+            width: 90%;
+            background-color: white;
+            text-align: end;
+            input{
+                width: 62%;
+                border: none;
+                outline: none;
+                padding: 10px 14px;
+            }
+            button{
+                border: none;
+                background-color: $yashil;
+                color: white;
+                padding: 10px 20px;
+            }
+        }
+        div{
+            margin-top: 16px;
+            padding-right: 30%;
+        }
+    }
+}
+
+
+@media(max-width:1000px){
+    .third{
+        .forty{
+            width: 49%;
+            height: 300px;
+        }
+        .sixty{
+            width: 49%;
+            height: 300px;
+        }
+    }
+}
+@media(max-width:760px){
+    .third{
+        .forty{
+            width: 80%;
+        }
+        .sixty{
+            width: 80%;
+            
+        }
+    }
+}
+
+@media(max-width:466px){
+    .third{
+        .fourth{
+            background-image: url(/assets/media/image\ \(7\).png);
+            background-size: 50% 70%;
+            background-color: $backgroundgrey;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            form{
+                width: 90%;
+                background-color: white;
+                text-align: end;
+                input{
+                    width: 50%;
+                    border: none;
+                    outline: none;
+                    padding: 10px 0;
+                }
+                button{
+                    border: none;
+                    background-color: $yashil;
+                    color: white;
+                    padding: 10px 20px;
+                }
+            }
+            div{
+                margin-top: 1px;
+                font-size: 12px;
+                padding-right: 30%;
+            }
+        }
+    }
+}

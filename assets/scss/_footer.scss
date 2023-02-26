@@ -1,0 +1,45 @@
+footer{
+    padding: 20px 0;
+    background-color: rgb(43, 43, 43);
+    .contain{
+        color: white;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        .links{
+            ul{
+                padding-left: 0;
+                li{
+                    a:hover{
+                        text-decoration: none;
+                        color: rgb(255, 191, 0);
+                    }
+                }
+            }
+        }
+        h4{
+            color: white;
+        }
+        .apps{
+            img{
+                width: 150px;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+@media(max-width:900px){
+    footer{
+        .contain{
+            .links{
+                width: 45%;
+                margin: 10px auto;
+            }
+            .apps{
+                width: 45%;
+                margin: 10px auto;
+            }
+        }
+    }
+}

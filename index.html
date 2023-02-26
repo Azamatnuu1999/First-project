@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="contain">
+            <div class="navbar">
+                <div class="navbar-top">
+                </div>
+                <div class="navbar-main">
+                    <div class="navbar-main__logo">
+                        <a href="#"><img src="/assets/media/logo.png" alt="not"></a>
+                    </div>
+                    <label for="checkbox" class="navbar-main__icon1"><i class="fa-solid fa-bars fa-2x"></i></label>
+                    <input class="navbar-main__input" type="checkbox" id="checkbox">
+                    <ul class="navbar-main__links">
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Girls</a></li>
+                        <li><a href="#">Boys</a></li>
+                        <li class="active"><a href="#">Sale</a></li>
+                    </ul>
+                    <div class="navbar-main__search">
+                        <form action="#"><input type="search" class="search" id="search" placeholder=" Search for products">
+                            <label for="search">
+                                <button class="button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </label></form>
+                    </div>
+                    <span class="navbar-main__icon">
+                        <i class="fa-regular fa-heart"></i><span>2</span>
+                        <i class="fa-solid fa-cart-shopping"></i><span class="span">4</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="name">
+            <p class="name__p">
+                <i class="fa-solid fa-angle-left"></i><b>Up to 70% Off.</b><a href="#">Shop our latest sale styles</a> <i class="fa-solid fa-angle-right"></i>
+            </p>
+        </div>
+        <div class="showcase">
+            <div class="contain">
+                <div class="text">
+                    <h4 class="text__h4">
+                        NEW COLLECTION
+                    </h4>
+                    <h1 class="text__h1">
+                        Menswear 2020
+                    </h1>
+                    <div class="text__flex">
+                        <button>Shop sale</button>
+                        <button class="second">Shop the menswear</button>
+                    </div>
+                    <div class="text__bottom">
+                        <span class="first">01</span>
+                        <span>02</span>
+                        <span>03</span>
+                        <span>04</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/media/background.png" class="d-block w-100" alt="not">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/media/background1.jpg" class="d-block w-100" alt="not">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/media/background2.jpg" class="d-block w-100" alt="not">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="images">
+            <div class="images__img">
+                <img src="./assets/media/image (4).png" alt="not">
+                <p>Women's</p>
+            </div>
+            <div class="images__img">
+                <img src="./assets/media/image (5).png" alt="not">
+                <p>Men's</p>
+            </div>
+            <div class="images__img">
+                <img src="./assets/media/image (6).png" alt="not">
+                <p>Kid's</p>
+            </div>
+          </div>
+    </header>
+
+    <!-- SECOND -->
+
+    <section class="second">
+        <div class="title">
+            <h1 class="title__h1">
+                New arrivals
+            </h1>
+            <div class="title__text">
+                <p>Check out latest arrivals for the upcoming season</p>
+                <a href="#">See the collection here</a>
+            </div>
+        </div>
+       <div class="contain1">
+        <div uk-slider>
+
+            <div class="uk-position-relative">
+        
+                <div class="uk-slider-container uk-light">
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                        <li>
+                            <img src="./assets/media/image.png" width="400" height="600" alt="not">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                        <li>
+                            <img src="assets/media/image2.png" width="400" height="600" alt="not">
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Metal bridge sunglasses <br><b>$89.95</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                        <li>
+                            <img src="assets/media/image3.png" width="400" height="600" alt="not">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Green baby romper <br><b>$20.40</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                        <li>
+                            <img src="assets/media/image4.png" width="400" height="600" alt="not">
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Mid rise slim cropped jeans <br><b>$18.15</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                        <li>
+                            <img src="assets/media/image5.png" width="400" height="600" alt="not">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Red dangle earrings<br><b>$29.95</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                        <li>
+                            <img src="assets/media/image6.png" width="400" height="600" alt="not">
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Baby shoes with laces <br><b>$30.60</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                        <li>
+                            <img src="assets/media/image.png" width="400" height="600" alt="not">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                        <li>
+                            <img src="assets/media/image2.png" width="400" height="600" alt="not">
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                        <li>
+                            <img src="assets/media/image3.png" width="400" height="600" alt="not">
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                        <li>
+                            <img src="assets/media/image4.png" width="400" height="600" alt="not">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p><i class="fa-regular fa-heart"></i></p>
+                            <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="uk-hidden@s uk-light">
+                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+        
+                <div class="uk-visible@s">
+                    <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+        
+            </div>    
+        </div>
+       </div>
+    </section>
+
+    <!-- THIRD -->
+
+    <section class="third">
+        <div class="forty first">
+            <h4 class="forty__h4">
+                SUMMER COLLECTIONS
+            </h4>
+            <h1 class="forty__h1">
+                Sale Up to 70%
+            </h1>
+            <button class="forty__btn">
+                Explore new prices
+            </button>
+        </div>
+        <div class="sixty second">
+            <h4 class="sixty__h4">
+                DEAL OF THE WEEK
+            </h4>
+            <h1 class="sixty__h1">
+                Stay warm With Our <br> New Sweaters
+            </h1>
+            <button class="sixty__btn">
+                Shop now
+            </button>
+            <h4 class="sixty__h4 data">
+                LIMITED OFFER
+            </h4>
+            <ul class="sixty__ul">
+                <li><b>06</b><br>Days</li>
+                <li><b>18</b><br>Hours</li>
+                <li><b>24</b><br>Mins</li>
+                <li><b>12</b><br>Sec</li>
+            </ul>
+        </div>
+        <div class="sixty third">
+            <h4 class="sixty__h4">
+                NEW COLLECTION
+            </h4>
+            <h1 class="sixty__h1">
+                Shoes & Bags <br> autumn / winter 2020
+            </h1>
+            <button class="sixty__btn">
+                See offers →
+            </button>
+        </div>
+        <div class="forty fourth">
+            <h4 class="forty__h4">
+                FOR ALL NEW EMAIL SUBSCRIBERS
+            </h4>
+            <h1 class="forty__h1">
+                Get 5% Off & Delivery
+            </h1>
+            <p class="forty__p">Email</p>
+            <form action="#" class="forty__form">
+                <input type="email" id="email" placeholder="Your working email">
+                <label for="email"><button>
+                    Subscribe
+                </button></label>
+            </form>
+            <div>
+                *Sign up to be the first to hear about exclusive deals, special offers and upcoming collections.
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOURTH SECTION -->
+
+    <section class="fourth">
+        <div class="contain">
+            <div class="title">
+                <h3 class="title__h3">
+                    Popular categories
+                </h3>
+            </div>
+            <div class="images">
+                <div class="images__img">
+                    <img src="./assets/media/image (4)1.png" alt="not">
+                    <p>Tops</p>
+                </div>
+                <div class="images__img">
+                    <img src="./assets/media/image (5)1.png" alt="not">
+                    <p>Caps</p>
+                </div>
+                <div class="images__img">
+                    <img src="./assets/media/image (6)1.png" alt="not">
+                    <p>Sandals</p>
+                </div>
+                <div class="images__img">
+                    <img src="./assets/media/image (7)1.png" alt="not">
+                    <p>Jackets</p>
+                </div>
+                <div class="images__img">
+                    <img src="./assets/media/image (8)1.png" alt="not">
+                    <p>Coats</p>
+                </div>
+                <div class="images__img">
+                    <img src="./assets/media/image (9)1.png" alt="not">
+                    <p>T-shirts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIVE -->
+
+    <section class="five">
+        <div class="contain">
+            <div class="title">
+                <h1 class="title__h1">
+                    Trending now
+                </h1>
+                <p>
+                    <span>←</span>
+                    <span class="span">→</span>
+                </p>
+            </div>
+            <div class="contain1">
+                <div uk-slider>
+        
+                    <div class="uk-position-relative">
+                
+                        <div class="uk-slider-container uk-light">
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                                <li>
+                                    <img src="./assets/media/image66.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image55.png" width="400" height="600" alt="not">
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Metal bridge sunglasses <br><b>$89.95</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image44.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Green baby romper <br><b>$20.40</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image4.png" width="400" height="600" alt="not">
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Mid rise slim cropped jeans <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image5.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Red dangle earrings<br><b>$29.95</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image6.png" width="400" height="600" alt="not">
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Baby shoes with laces <br><b>$30.60</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image2.png" width="400" height="600" alt="not">
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image3.png" width="400" height="600" alt="not">
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image4.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <div class="uk-hidden@s uk-light">
+                            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                
+                        <div class="uk-visible@s">
+                            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                
+                    </div>    
+                </div>
+               </div>
+               <div class="button">
+                <button class="button__btn">
+                    Explore top sales
+                </button>
+               </div>
+        </div>
+    </section>
+
+    <!-- SIX -->
+    <section class="six">
+        <div class="contain">
+            <div class="title">
+                <h1 class="title__h1">
+                    Sale up to 70%
+                </h1>
+                <p>
+                    <span>←</span>
+                    <span class="span">→</span>
+                </p>
+            </div>
+            <div class="contain1">
+                <div uk-slider>
+        
+                    <div class="uk-position-relative">
+                
+                        <div class="uk-slider-container uk-light">
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                                <li>
+                                    <img src="./assets/media/image33.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <h6>-50%</h6>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b> <del>$179.00</del></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                    <div class="bottom">
+                                        <div>
+                                            <ul>
+                                                <li>36</li>
+                                                <li>37</li>
+                                                <li>38</li>
+                                                <li>38</li>
+                                                <li>40</li>
+                                                <li class="onee one">
+                                                    1
+                                                </li>
+                                                <li class="two">
+                                                    1
+                                                </li>
+                                                <li class="three">
+                                                    1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image22.png" width="400" height="600" alt="not">
+                                    <h6>-40%</h6>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Metal bridge sunglasses <br><b>$89.95</b><del>80.00</del></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                    <div class="bottom">
+                                        <div>
+                                            <ul>
+                                                <li>36</li>
+                                                <li>37</li>
+                                                <li>38</li>
+                                                <li>38</li>
+                                                <li>40</li>
+                                                <li class="onee one">
+                                                    1
+                                                </li>
+                                                <li class="two">
+                                                    1
+                                                </li>
+                                                <li class="three">
+                                                    1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image11.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <h6>-30%</h6>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Green baby romper <br><b>$20.40</b><del>144.00</del></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                    <div class="bottom">
+                                        <div>
+                                            <ul>
+                                                <li>36</li>
+                                                <li>37</li>
+                                                <li>38</li>
+                                                <li>38</li>
+                                                <li>40</li>
+                                                <li class="onee one">
+                                                    1
+                                                </li>
+                                                <li class="two">
+                                                    1
+                                                </li>
+                                                <li class="three">
+                                                    1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image4.png" width="400" height="600" alt="not">
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h6>-60%</h6>
+                                    <h5>Mid rise slim cropped jeans <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                    <div class="bottom">
+                                        <div>
+                                            <ul>
+                                                <li>36</li>
+                                                <li>37</li>
+                                                <li>38</li>
+                                                <li>38</li>
+                                                <li>40</li>
+                                                <li class="onee one">
+                                                    1
+                                                </li>
+                                                <li class="two">
+                                                    1
+                                                </li>
+                                                <li class="three">
+                                                    1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image5.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <h6>-30%</h6>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Red dangle earrings<br><b>$29.95</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                    <div class="bottom">
+                                        <div>
+                                            <ul>
+                                                <li>36</li>
+                                                <li>37</li>
+                                                <li>38</li>
+                                                <li>38</li>
+                                                <li>40</li>
+                                                <li class="onee one">
+                                                    1
+                                                </li>
+                                                <li class="two">
+                                                    1
+                                                </li>
+                                                <li class="three">
+                                                    1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image6.png" width="400" height="600" alt="not">
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Baby shoes with laces <br><b>$30.60</b></h5>
+                                    <h6>-30%</h6>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                    <div class="bottom">
+                                        <div>
+                                            <ul>
+                                                <li>36</li>
+                                                <li>37</li>
+                                                <li>38</li>
+                                                <li>38</li>
+                                                <li>40</li>
+                                                <li class="onee one">
+                                                    1
+                                                </li>
+                                                <li class="two">
+                                                    1
+                                                </li>
+                                                <li class="three">
+                                                    1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image2.png" width="400" height="600" alt="not">
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image3.png" width="400" height="600" alt="not">
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                                <li>
+                                    <img src="assets/media/image4.png" width="400" height="600" alt="not">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                    <h5>Black and white sport cap <br><b>$18.15</b></h5>
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <div class="uk-hidden@s uk-light">
+                            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                
+                        <div class="uk-visible@s">
+                            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                
+                    </div>    
+                </div>
+               </div>
+               <div class="button">
+                <button class="button__btn">
+                    See all sale products
+                </button>
+               </div>
+        </div>
+    </section>
+
+    <section class="seven">
+        <div class="contain">
+            <div class="image">
+                <img src="./assets/media/backgroundgirl.png" alt="not">
+            </div>
+            <div class="data">
+                <div class="data__text">
+                    <h1>Enjoy mobile shopping with our Createx Store App!</h1>
+                </div>
+                <div class="data__images">
+                    <img src="./assets/media/app-store.png" alt="not">
+                    <img src="./assets/media/google-play.png" alt="not">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EIGHT -->
+    <section class="eight">
+        <div class="contain">
+            <div class="icons">
+                <img src="./assets/media/icon-box.png" alt="not">
+                <img src="./assets/media/icon-box (1).png" alt="not">
+                <img src="./assets/media/icon-box (2).png" alt="not">
+                <img src="./assets/media/icon-box (3).png" alt="not">
+            </div>
+            <div class="profil">
+                <div class="profil__name">
+                    <h5>FOLLOW US ON INSTAGRAM</h5>
+                    <h2>@createx_store</h2>
+                    <button>Follow Instagram</button>
+                </div>
+                <div class="profil__images">
+                    <img src="./assets/media/image (444).png" alt="not">
+                    <img src="./assets/media/image (555).png" alt="not">
+                    <img src="./assets/media/image (666).png" alt="not">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- NINE -->
+    <section class="nine">
+        <div class="title">
+            <h1>Fashion Blog</h1>
+        </div>
+        <div class="contain">
+            <div class="fifty">
+                <div class="fifty__img">
+                    <img src="/assets/media/image (4444).png" alt="not">
+                </div>
+                <div class="fifty__content">
+                    <h3>Bag Trends for Summer 2020</h3>
+                    <span>Fashion / August 24, 2020 / No comments</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, voluptatem? Soluta deleniti nobis dolor adipisci repellat culpa temporibus quam recusandae nisi, ducimus tempore molestias aliquam praesentium fugiat ab? Magnam, aliquam!</p>
+                </div>
+            </div>
+            <div class="fifty">
+                <div class="fifty__img">
+                    <img src="/assets/media/image (5555).png" alt="not">
+                </div>
+                <div class="fifty__content">
+                    <h3>Top 10 of This Season's Hottest Sneakers</h3>
+                    <span>Lifestyle / August 14, 2020 / 4 comments</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, voluptatem? Soluta deleniti nobis dolor adipisci repellat culpa temporibus quam recusandae nisi, ducimus tempore molestias aliquam praesentium fugiat ab? Magnam, aliquam!</p>
+                </div>
+            </div>
+        </div>
+        <div class="contain11">
+            <div class="logo">
+                <div>
+                    <a href="#"><img src="./assets/media/National Health Logo.png" alt="not"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./assets/media/For Sale Logo.png" alt="not"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./assets/media/Higher Fit Logo - Untitled Page.png" alt="not"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./assets/media/InDepth Consulting Logo - Untitled Page.png" alt="not"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./assets/media/Sentinal Consulting Logo.png" alt="not"></a>
+                </div>
+               <div>
+                <a href="#"><img src="./assets/media/National Health Logo.png" alt="not"></a>
+               </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="ten">
+        <div class="contain">
+            <div class="forty">
+                <h2>Subscribe for updates</h2>
+                <span>Subscribe for exclusive early sale access and new arrivals.</span>
+                <div>
+                    <button>Women</button>
+                    <button>Men</button>
+                    <button>Girls</button>
+                    <button>Boys</button>
+                </div>
+                <p>Email</p>
+                <form action="#">
+                    <div class="input">
+                        <input type="email" placeholder="Your working email" id="email">
+                        <label for="email">
+                            <button>
+                                Subscribe
+                            </button>
+                        </label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1">I agree to receive communicatinos from Cretex Store.</label>
+                    </div>
+                </form>
+            </div>
+            <div class="fortyy">
+                <img src="./assets/media/image4444.png" alt="not">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contain">
+            <div class="links">
+                <h4>HELP</h4>
+                <ul>
+                    <li><a href="#">Delivery & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Track order</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>SHOP</h4>
+                <ul>
+                    <li><a href="#">New arrivals</a></li>
+                    <li><a href="#">Trending now</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Brands</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>GET IN TOUCH</h4>
+                <ul>
+                    <li><a href="tel:(405) 555-0128">(405) 555-0128</a></li>
+                    <li><a href="mail-to:hello@createx.com">hello@createx.com</a></li>
+                </ul>
+            </div>
+            <div class="apps">
+                <h4>DOWNLOAD OUR APP</h4>
+                <div class="flex">
+                    <img src="./assets/media/app-store.png" alt="not">
+                    <img src="./assets/media/google-play.png" alt="not">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.ten{
+    background-color: $backgroundgrey;
+    .contain{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0;
+        justify-content: space-between;
+        .forty{
+            h2{
+                font-weight: 700;
+            }
+            span{
+                color: grey;
+            }
+            button{
+                margin-top: 5px;
+                border: 1px solid $yashil;
+                border-radius: 3px;
+                background-color: inherit;
+                padding: 5px 10px;
+            }
+            button:hover{
+                background-color: $yashil;
+                color: white;
+            }
+            p{
+                margin: 10px;
+            }
+            .input{
+                width: 282px;
+                height: 44px;
+                margin: 4px 0 10px;
+                position: relative;
+                align-items: center;
+                background-color: white;
+                input{
+                    padding: 7px 0 0 5px;
+                    border: none;
+                    outline: none;
+                }
+                button{
+                    background-color: $yashil;
+                    color: white;
+                    padding:9px 10px;
+                    position: absolute;
+                    top: -5px;
+                    right: 0;
+                }
+                button:hover{
+                    color: aquamarine;
+                }
+            }
+            width: 60%;
+        }
+        .fortyy{
+            width: 39%;
+        }
+    }
+}
+
+@media(max-width:830px){
+    .ten{
+        .contain{
+            .forty{
+                width: 80%;
+                text-align: center;
+                margin: 0 auto;
+                .input{
+                    margin: 10px auto;
+                    text-align: start;
+                }
+                .flex{
+                    display: flex;
+                }
+            }
+            .fortyy{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

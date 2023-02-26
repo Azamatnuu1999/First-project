@@ -1,0 +1,361 @@
+.header{
+    position: relative;
+    .contain{
+        .navbar{
+            display: block;
+            .navbar-top{
+                display: none;
+            }
+            .navbar-main{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                &__links{
+                    font-weight: 500;
+                    display: flex;
+                    gap: 10%;
+                    margin-left: -10%;
+                    margin-top: 2px;
+                    .active{
+                        color: red;
+                    }
+                }
+                &__input{
+                    display: none;
+                }
+                &__input:checked ~ ul{
+                    display: block;
+                    position: absolute;
+                    left: 38%;
+                    top: 36px;
+                    background-color: white;
+                    padding-right: 20px;
+                    z-index: 2;
+                }
+                &__icon1{
+                    display: none;
+                }
+                &__logo{
+                }
+                &__search{
+                    height: 100%;
+                    padding-right: 5px;
+                    border: 1px solid grey;
+                    border-radius: 3px;
+                    input{
+                        outline: none;
+                        border: none;
+                        padding: 5px;
+                        height: 100%;
+                    }
+                    button{
+                        border: none;
+                        background-color: inherit;
+                    }
+                }
+                &__icon{
+                    display: block;
+                    margin-top: 5px;
+                    span{
+                        margin-left: 5px;
+                        padding-right: 5px;
+                        border-right: 1px solid rgb(94, 94, 94);
+                    }
+                    .span{
+                        color: white;
+                        padding: 0 6px;
+                        border: none;
+                        border-radius: 25%;
+                        background-color: #03CEA4;
+                    }
+                }
+                &__icon{
+                    i:hover{
+                        color: #03CEA4;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .name{
+        text-align: center;
+        background-color: #17696A;
+        color: white;
+        align-items: center;
+        padding: 10px 0 1px;
+        font-size: 14px;
+        a{
+            text-decoration: underline;
+        }
+        a:hover{
+            color: grey;
+        }
+        i{
+            margin: 1px 5px;
+        }
+        i:hover{
+            color: grey;
+        }
+    }
+    .showcase{
+        position: absolute;
+        z-index: 1;
+        top: 250px;
+        left: 7%;
+        .contain{
+            .text{
+                width: 490px;
+                color: black;
+                &__h4{
+                    font-size: 16px;
+                    text-shadow: 0 0 4px white;
+                }
+                &__h1{
+                    font-size: 50px;
+                    text-shadow: 0 0 6px white;
+                }
+                &__flex{
+                    button{
+                        padding: 10px 20px;
+                        border-radius: 6px;
+                        margin: 50px 0;
+                        color: $yashil;
+                        text-shadow: 0 0 2px white;
+                        background-color: inherit;
+                        box-shadow: 0 0 5px white;
+                        border: 1px solid $yashil;
+                    }
+                    button:hover{
+                        background-color: $yashil;
+                        text-shadow: none;
+                        color: white;
+
+                    }
+                    .button:hover{
+                        cursor: pointer;
+                    }
+                    .second{
+                        background-color: $yashil;
+                        color: white;
+                        text-shadow: none;
+                        box-shadow: none;
+                        margin-left: 10px;
+                    }
+                    .second:hover{
+                        color: $yashil;
+                        background-color: inherit;
+                        box-shadow: 0 0 5px white;
+                        text-shadow: 0 0 2px white;
+                    }
+                }
+                &__bottom{
+                    span{
+                        color: grey;
+                        padding:5px 50px;
+                        border-bottom: 2px solid grey;
+                    }
+                    .first{
+                        color: black;
+                        border-bottom:2px solid black;
+                    }
+                    span:hover{
+                        color: black;
+                        border-bottom: 2px solid black;
+                        text-shadow: 0 0 3px white;
+                    }
+                }
+
+            }
+        }
+    }
+    .images{
+        position: absolute;
+        bottom: -40%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        &__img{
+            text-align: center;
+            width: 30%;
+        }
+        &__img:hover{
+            transform: scale(1.02);
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+            box-shadow: 0 0 6px grey;
+            cursor: pointer;
+        }
+    }
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    height: 580px !important;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .header{
+        .contain{
+            .navbar{
+                .navbar-main{
+                    align-items: center;
+                    &__links{
+                        display: none;
+                    }      
+                    &__icon1{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:900px){
+    .header{
+        .contain{
+            .navbar{
+                .navbar-main{
+                    align-items: center;
+                    &__links{
+                        display: none;
+                    }
+                    &__icon1{
+                        display: block;
+                    }             
+                }
+            }
+        }
+        .showcase{
+            .contain{
+                height: 400px !important;
+                .text{
+                    width: 200px;
+                    &__h4{
+                        font-size: 11px;
+                    }
+                    &__h1{
+                        font-size:24px;
+                    }
+                    &__flex{
+                        button{
+                            padding: 6px 18px;
+                            margin: 15px 0;
+                        }
+                        .second{
+                            margin-left: 0;
+                        }
+                    }
+                    &__bottom{
+                        span{
+                            padding:5px 10px;
+                            border-bottom: 2px solid grey;
+                        }
+                        .first{
+                            color: black;
+                            border-bottom:2px solid black;
+                        }
+                        span:hover{
+                            color: black;
+                            border-bottom: 2px solid black;
+                            text-shadow: 0 0 3px white;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .header{
+        .contain{
+            .navbar{
+                .navbar-main{
+                    &__search{
+                        display: none;
+                    }
+                    &__icon1{
+                        display: block;
+                    }
+                    
+                }
+            }
+        }
+        .showcase{
+            top: 100px;
+        }
+        .showcase{
+            .contain{
+                .text{
+                    &__h4{
+                        margin-top: 23px;
+                        margin-bottom: 1px;
+                    }
+                    &__h1{
+                        font-size:24px;
+                    }
+                    &__flex{
+                        button{
+                            padding: 6px 18px;
+                            margin: 10px 0;
+                        }
+                        .second{
+                            margin-left: 0;
+                        }
+                    }
+                    &__bottom{
+                        span{
+                            padding:5px 10px;
+                            border-bottom: 2px solid grey;
+                        }
+                        .first{
+                            color: black;
+                            border-bottom:2px solid black;
+                        }
+                        span:hover{
+                            color: black;
+                            border-bottom: 2px solid black;
+                            text-shadow: 0 0 3px white;
+                        }
+                    }
+    
+                }
+            }
+        }
+        .images{
+            position: absolute;
+            bottom: -42%;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10%;
+            &__img{
+                text-align: center;
+                width: 30%;
+            }
+            &__img:hover{
+                transform: scale(1.02);
+                transition-duration: 0.3s;
+                transition-timing-function: linear;
+                box-shadow: 0 0 6px grey;
+                cursor: pointer;
+            }
+        }
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        height: 310px !important;
+                    }
+                }
+            }
+        }
+    }
+}
